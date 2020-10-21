@@ -1,19 +1,19 @@
 package com.poo.homeShop;
 
 public class Product {
-    private String nom;
+    private String prenom;
     private String description;
     private double prix;
 
 
-    public Product(String nom, String description, double prix) {
-        this.nom = nom;
+    public Product(String prenom, String description, double prix) {
+        this.prenom = prenom;
         this.description = description;
         this.prix = prix;
     }
 
     public String getNom() {
-        return nom;
+        return prenom;
     }
 
     public String getDescription() {
@@ -32,7 +32,7 @@ public class Product {
      * Afficher une description complète du produit
      */
     public void look() {
-
+        System.out.println(String.format(prenom + " : " + prix + "%n" + description));
     }
 
     /**
